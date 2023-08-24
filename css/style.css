@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
@@ -10,6 +10,7 @@ body {
     font-size: 20px;
 }
 
+/*Homepage*/
 .navbar {
     width: 100%;
     padding: 10px 0;
@@ -49,3 +50,53 @@ h1 {
     flex-direction: column;
 }
 
+/*Rewards*/
+.rewards {
+    padding-bottom: 10%;
+}
+
+.rewards-container {
+    text-align: center;
+    padding-top: 20%;
+}
+
+.level {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.meter {
+    display: flex;
+    align-items: flex-end;
+    height: 20px;
+}
+
+.square {
+    width: 50px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: grey;
+    border-radius: 40px;
+    transition: height 0.5s ease, background-color 0.5s ease;
+}
+
+.green {
+    background-color: green;
+}
+
+.animation {
+    animation: fillMeter 5s linear infinite;
+}
+
+@keyframes fillMeter {
+    0%, 100% {
+        height: 0;
+    }
+    20%, 80% {
+        height: 40px;
+    }
+    40%, 60% {
+        height: 80px;
+    }
+}
