@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -60,6 +62,11 @@ h1 {
     padding-top: 20%;
 }
 
+.reward-header {
+    display: flex;
+    justify-content: center;
+}
+
 .level {
     font-size: 24px;
     font-weight: bold;
@@ -100,3 +107,53 @@ h1 {
         height: 80px;
     }
 }
+
+/* Image Carousel */
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    width: 300px; 
+}
+.carousel {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    margin-left: auto;
+}
+
+.carousel-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.level-intro {
+    color: white;
+    font-family: 'Inter';font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-carousel + .image-carousel {
+    margin-top: 30px;
+}
+
+.image-carousel-container {
+    background-image: url("https://raw.githubusercontent.com/lrmoore2023/StepQuest/main/images/carousel-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px; 
+    margin-top: 30px; 
+}
+
+
+
+
+
